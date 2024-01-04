@@ -35,4 +35,14 @@ public class UserRegisterTest {
         }
     }
 
+    @Test
+    public void testPassword(){
+        boolean pass=false;
+        try {
+            pass=userRegister.validatePassword("Akash#12");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }

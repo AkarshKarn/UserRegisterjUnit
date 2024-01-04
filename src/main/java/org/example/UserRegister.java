@@ -24,4 +24,11 @@ public class UserRegister {
             throw new Exception("Please enter a valid e-mail id");
     }
 
+    public boolean validatePassword(String password) throws Exception{
+        if (Pattern.matches("([A-Za-z0-9][!@#$%&]{1}+[A-Za-z0-9][!@#$%&]{1}).{8,32}",password))
+            return true;
+        else
+            throw new Exception("Please choose a valid password");
+    }
+
 }
