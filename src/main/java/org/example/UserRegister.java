@@ -31,4 +31,12 @@ public class UserRegister {
             throw new Exception("Please choose a valid password");
     }
 
+    public boolean validatePhoneNum(String phoneNumber) throws Exception{
+        if (Pattern.matches("^[+][1-9].{1,2}[ ][0-9]{10}$",phoneNumber))
+            return true;
+        else
+            throw new Exception("Please enter a valid phone number");
+    }
+
+
 }
