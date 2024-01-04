@@ -25,4 +25,14 @@ public class UserRegisterTest {
         }
     }
 
+    @Test
+    public void testEMail(){
+        boolean mail=false;
+        try {
+            mail=userRegister.validateEmail("abc@yahoo.com,");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }

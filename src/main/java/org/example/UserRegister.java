@@ -17,4 +17,11 @@ public class UserRegister {
             throw new Exception("Please enter a valid last name");
     }
 
+    public boolean validateEmail(String eMail) throws Exception{
+        if (Pattern.matches("^[a-zA-Z0-9.]+@[a-zA-Z0-9.]+$",eMail))
+            return true;
+        else
+            throw new Exception("Please enter a valid e-mail id");
+    }
+
 }
