@@ -9,4 +9,12 @@ public class UserRegister {
         else
             throw new Exception("Please enter a valid first name");
     }
+
+    public boolean validateLastName(String lName) throws Exception{
+        if (Pattern.matches("[A-Z]{1,}[a-z]{3,}",lName))
+            return true;
+        else
+            throw new Exception("Please enter a valid last name");
+    }
+
 }
