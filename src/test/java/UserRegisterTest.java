@@ -45,4 +45,14 @@ public class UserRegisterTest {
         }
     }
 
+    @Test
+    public void testPhoneNumber(){
+        boolean phoneNumber=false;
+        try {
+            phoneNumber=userRegister.validatePhoneNum("+91 1234567890");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
