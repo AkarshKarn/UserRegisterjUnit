@@ -14,4 +14,15 @@ public class UserRegisterTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testLastName(){
+        boolean lastName=false;
+        try {
+            lastName=userRegister.validateLastName("Karn");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
 }
